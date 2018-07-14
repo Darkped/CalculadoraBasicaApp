@@ -1,14 +1,36 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
+  <ion-navbar color="primary">
+    <ion-title> 
+      Calculadora
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-item>
+    <ion-label floating> Numero 1 </ion-label>
+    <ion-input [(ngModel)]="numberA" type="number"> </ion-input>
+  </ion-item>
+  <ion-item>
+     <ion-label floating> Numero 2 </ion-label>
+     <ion-input [(ngModel)]="numberB" type="number"> </ion-input>
+   </ion-item>
+ 
+   <button ion-button (click)="performFunction('s')" color="danger"> + </button>
+ 
+   <button ion-button (click)="performFunction('r')" color="primary"> - </button>
+   
+   <button ion-button (click)="performFunction('m')" color="secondary"> X </button>
+   
+   <button ion-button (click)="performFunction('d')" color="danger"> / </button>
+   
+ <ion-item>
+   <ion-label fixed> Operacion </ion-label>
+   <ion-label fixed> {{typeOfAction}}</ion-label>
+   </ion-item>
+ 
+   <ion-item>
+     <ion-label fixed> Resultado </ion-label>
+     <ion-label> {{result}}</ion-label>
+ </ion-item>
 </ion-content>
