@@ -8,29 +8,34 @@
 
 <ion-content padding>
   <ion-item>
-    <ion-label floating> Numero 1 </ion-label>
-    <ion-input [(ngModel)]="numberA" type="number"> </ion-input>
+    
+      <ion-input  type="textarea" placeholder="0" [(ngModel)]="result"></ion-input>
   </ion-item>
-  <ion-item>
-     <ion-label floating> Numero 2 </ion-label>
-     <ion-input [(ngModel)]="numberB" type="number"> </ion-input>
-   </ion-item>
- 
-   <button ion-button (click)="performFunction('s')" color="danger"> + </button>
- 
-   <button ion-button (click)="performFunction('r')" color="primary"> - </button>
+  
+        <button ion-button class="miboton" (click)="numberclick('9')"> 9 </button>
+        <button ion-button class="miboton" (click)="numberclick('8')"> 8 </button>
+        <button ion-button class="miboton" (click)="numberclick('7')"> 7 </button>
+        <button ion-button class="miboton" (click)="numberclick('+')"> + </button>
+      <br>
+                 
+        <button ion-button class="miboton" (click)="numberclick('6')"> 6 </button>
+        <button ion-button class="miboton" (click)="numberclick('5')"> 5 </button>
+        <button ion-button class="miboton" (click)="numberclick('4')"> 4 </button>
+        <button ion-button class="miboton" (click)="numberclick('-')"> -</button>
+        <br>
+                 
+        <button ion-button class="miboton" (click)="numberclick('3')"> 3 </button>
+        <button ion-button class="miboton" (click)="numberclick('2')"> 2 </button>
+        <button ion-button class="miboton" (click)="numberclick('1')"> 1 </button>
+        <button ion-button class="miboton" (click)="numberclick('*')"> X </button>
+        <br>
+                 
+        <button ion-button class="miboton" (click)="numberclick('0')"> 0</button>
+        <button ion-button class="miboton" (click)="numberclick('C')"> C </button>
+        <button ion-button class="miboton" (click)="numberclick('/')"> / </button>
+        <button ion-button class="miboton" (click)="numberclick('=')"> = </button>
    
-   <button ion-button (click)="performFunction('m')" color="secondary"> X </button>
    
-   <button ion-button (click)="performFunction('d')" color="danger"> / </button>
-   
- <ion-item>
-   <ion-label fixed> Operacion </ion-label>
-   <ion-label fixed> {{typeOfAction}}</ion-label>
-   </ion-item>
  
-   <ion-item>
-     <ion-label fixed> Resultado </ion-label>
-     <ion-label> {{result}}</ion-label>
- </ion-item>
+ 
 </ion-content>

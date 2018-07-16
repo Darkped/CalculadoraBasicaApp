@@ -1,2 +1,41 @@
 page-home {
+    ion-content {
+
+        width: 100%;
+      
+        max-width: 400px;
+      
+        text-align: center;
+      
+        border: solid 1px #c2c2c2;
+      
+        padding-bottom: 10px;
+      
+        margin: auto;
+      
+        background: #fafafa;
+      
+      }
+      
+    .miboton {
+
+        background-color: rgba(70, 50, 241, 0.63);
+    
+        border: none;
+    
+        color: white;
+    
+        padding: 8px 15px;
+    
+        font-size: 16px;
+    
+        min-width: 21%;
+    
+        text-decoration: none;
+    
+        margin: 4px 2px;
+    
+       
+    
+    }
 }
